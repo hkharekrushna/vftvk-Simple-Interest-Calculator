@@ -28,17 +28,28 @@ function compute() {
         document.getElementById("errorP").style.display = "none";
         document.getElementById("errorT").style.display = "block";
     } else {
-        document.getElementById("errorP").style.display = "none";
-        document.getElementById("errorT").style.display = "none";
-        var si = (p * t * r) / 100;
-        var total = p + si;
-        var date = new Date();
-        var y = date.getFullYear() + t;
 
-        console.log(p + " " + r + " " + t + " " + si + " " + y);
-        var result = document.getElementById("result");
-        result.innerHTML = "<p>If you deposit " + p + "<br> at an interest rate of " +
-            r + "% <br> You will receive an amount of " + total + "<br> in the year " + y + " </p>";
+        if (p <= 0) {
+            document.getElementById("errorP").innerText = "Enter a positive value";
+            document.getElementById("errorP").style.display = "block";
+
+        } else {
+
+            document.getElementById("errorP").style.display = "none";
+            document.getElementById("errorT").style.display = "none";
+            var si = (p * t * r) / 100;
+            var total = p + si;
+            var date = new Date();
+            var y = date.getFullYear() + t;
+
+            console.log(p + " " + r + " " + t + " " + si + " " + y);
+            var result = document.getElementById("result");
+            result.innerHTML = "<p>If you deposit <span id='num'> " + p + " </span><br> at an interest rate of <span id='num'>" 
+            +
+                r + "% </span> <br> You will receive an amount of <span id='num'>" + total + " </span><br> in the year <span id='num'>" + y + " </span></p>";
+
+        }
+
 
     }
 
