@@ -46,7 +46,7 @@ function compute() {
             var result = document.getElementById("result");
             result.innerHTML = "<p>If you deposit <span id='num'> " + p + " </span><br> at an interest rate of <span id='num'>" 
             +
-                r + "% </span> <br> You will receive an amount of <span id='num'>" + total + " </span><br> in the year <span id='num'>" + y + " </span></p>";
+                r + "% </span> <br> You will receive an amount of <span id='num'>" + si+ " </span><br> in the year <span id='num'>" + y + " </span></p>";
 
         }
 
