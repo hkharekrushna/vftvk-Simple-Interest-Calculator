@@ -1,4 +1,47 @@
-body {background-color:tan;}
-h1{color:green;}
+body {
+    background-color: black;
+}
+
+
+
+#box{
+    margin-top: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: white;
+    border-radius: 25px;
+}
+
+h1{
+    position: relative;
+    margin-top: 100px;
+    color:grey;
+    text-align: center;
+    
+}
+
+form{
+    margin-top: 30px;
+}
+
+label{
+    margin-top: 50%;
+}
+
+#calcfooter{
+    position: relative;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+#result{
+   text-align: center;
+}
+
+#ques{
+    margin-left: 30%;
+    /* margin-right: 30%; */
+}
+
 
 
